@@ -5,6 +5,7 @@ function gerarTabuada() {
     document.getElementById("numeroEscolhido").value,
   );
   const tabela = document.getElementById("tabela");
+  tabela.replaceChildren();
   for (let i = 0; i <= 10; i++) {
     const resultado = i * multiplicando;
     const expressao = document.createElement("td");
