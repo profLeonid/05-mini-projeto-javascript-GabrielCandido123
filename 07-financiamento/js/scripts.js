@@ -17,7 +17,7 @@ function simularFinanciamento() {
     const valorParcela = valorTotal / parcelas;
     const totalMes = valorParcela + jurosMes;
 
-    saldoDevedorAtual = saldoDevedorAtual + jurosMes - valorParcela;
+    saldoDevedorAtual = saldoDevedorAtual - valorParcela;
 
     const tabela = document.createElement("tr");
 
